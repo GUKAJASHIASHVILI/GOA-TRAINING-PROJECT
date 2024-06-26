@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style> 
+        body{
+            background: rgb(55,224,32);
+            background: linear-gradient(0deg, rgba(55,224,32,1) 0%, rgba(1,65,28,1) 60%, rgba(0,0,0,1) 100%);
+            background-attachment: fixed;
+            height: 500vh;
+        }
+        *{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+        .fa-facebook{
+            font-size: 200%;
+            position: absolute;
+            left: -40px;
+            top: 50px;
+        }
+        .fa-facebook-f{
+            font-size: 200%;
+            position: absolute;
+            left: -35px;
+            top: 105px;
+        }
+        .fa-envelope{
+            font-size: 200%;
+            position: absolute;
+            left: -42px;
+            top: 215px;
+        }
+        .fa-youtube{
+            font-size: 200%;
+            position: absolute;
+            left: -44px;
+            top: 160px;
+        }
+        .fa-phone{
+            font-size: 200%;
+            position: absolute;
+            left: -40px;
+            top: 270px;
+        }
+        #navbar{
+            background:#020902;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        #navdiv{
+            display: flex;
+            align-items:center;
+            justify-content: space-around;
+        }
+        li{
+            list-style: none; 
+            display: inline-block;
+        }
+        li a{
+            color: white;
+            margin-right: 25px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button{
+            background-color: darkgreen;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+        }
+        button a{
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        #h1{
+            position: absolute;
+            left: 50vh;
+            top: 40vh;
+            color: white;
+            font-size: 500%;
+        }
+        #h1 b{
+            color: #70C079;
+        }
+        #button{
+            position: absolute;
+            left: 87vh;
+            top: 60vh;
+            color: white;
+            font-size: 200%;
+            padding: 15px;
+            width: 250px;
+            border-radius: 15px
+        }
+        #img1{
+            height: 120vh;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        <!--უამრავი შეხვედრა-->
+
+        #div2{
+            position: absolute;
+            top: 15%;
+            border-radius: 20px;
+            height: 100vh;
+        }
+        #img2
+        {
+            position: absolute;
+            left: 100vh;
+            float: right;
+            border-radius: 16px;
+        }
+        #div1
+        {
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            top: 140vh;
+            height: 30vh;
+        }
+
+
+        <!--მენტორების დახმარება-->
+
+        #div4{
+            position: absolute;
+            top: 15%;
+            left: 100vh;
+            float: right;
+            border-radius: 16px;
+        }
+        #img3{
+            position: absolute;
+            left: 100vh;
+            float: right;
+            border-radius: 16px;
+        }
+
+        #div3{
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            top: 190vh;
+            height: 30vh;
+        }
+
+
+        <!--About GOA-->
+
+        #div6{
+            position: absolute;
+            top: 15%;
+            border-radius: 20px;
+            height: 100vh;
+        }
+        #img4{
+            position: absolute;
+            left: 100vh;
+            float: right;
+            border-radius: 16px;
+        }
+        #div5{
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            top: 240vh;
+            height: 30vh;
+        }
+
+
+        <!--GOAში რეგისტრაცია-->
+
+        #img5{
+            position: absolute;
+            left: 100vh;
+            float: right;
+            border-radius: 16px;
+        }
+        #div8{
+            color: black;
+        }
+        #div7{
+            position: absolute;
+            width: 70%;
+            right: 0%;
+            top: 300vh;
+            height: 30vh;
+        }
+
+        <!--Contact-->
+
+        #div10{
+            position: absolute;
+            top: 15%;
+            border-radius: 20px;
+            height: 100vh;
+        }
+        #div9{
+            position: absolute;
+            width: 70%;
+            right: 15%;
+            top: 360vh;
+            height: 30vh;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navdiv">
+            <a href="#"><img src="./Images/GOA-removebg-preview.png" alt="GOA LOGO" width="30%"></a>
+            <ul>
+                <li><a href="#div1">Home</a></li>
+                <li><a href="#div5">About</a></li>
+                <li><a href="#div9">Contact</a></li>
+                <button><a href="">Sign in</a></button>
+                <button><a href="">Log in</a></button>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 id="h1">დარეგისტრირდი <b>GOA</b>'ში</h1>
+
+    <button id="button">რეგისტრაცია</button>
+
+<img id="img1" src="./Images/GOA_cleanup.jpg" alt="GOA BACKGROUND">
+
+    <div id="div1">
+        <img id="img2" src="./Images/Screenshot 2024-06-24 142256.png" alt="GOA " width="30%">
+        <div id="div2">
+            <p><h2><b>უამრავი შეხვედრა</h2><br>
+              ჩვენი კურსი საშუალებას მოგცემს სრულყოფილად აითვისო ახალი<br>
+              პროფესია და მასთან დაკავშირებული უნარები, გაიუმჯობესო<br>
+              სასაუბრო ინგლისური და ყველა კომპონენტში მოემზადო შენი<br>
+             პირველი გასაუბრებისთვის <br>
+            </div> </b></p>
+        </div>
+    </div>
+
+    <div id="div3">
+        <img id="img3" src="./Images/GOA1.jpg" alt="GOA" width="30%">
+        <div id="div4">
+            <p><h2><b>მენტორების დახმარება</h2><br>
+                ჩვენი გამოცდილი, პროფესიონალი მენტორები და რაზმის ლიდერები<br>
+                დაგეხმარებიან ყველანაირი პრობლემის მოგვარებაში და გადაჭრაში. <br> <br>
+ 
+                თუ ჯერ კიდევ არ იცი, რომელი პროფესიაა შენთვისუფრო საინტერესო, <br>
+                თუ გინდა ზუსტად იცოდე რას უნდა ელოდო GOA'სგან, მაშინ <br>
+                დარეგისტრირდი GOA'ში.</b></p>
+        </div>
+    </div>
+
+
+    <div id="div5">
+
+        <img id="img4" src="./Images/GOA.jpg" alt="GOA logo" width="30%">
+        <div id="div6">
+        <p><h2><b>About GOA</h2> <br>
+            Goal-Oriented Academy • GOA- ში მონდომებული ბავშვები დასახულ მიზნებს აღწევენ <br>
+            💪მათ დაბრკოლებები ვერ აჩერებთ <br>
+            🧠აქ პროგრამირებას & ლიდერობას სწავლობენ საუკეთესო მენტორებისგან, ყალიბდებიან <br>
+            საუკეთესო ადამიანებად და იძენენ სანუკვარ თვისებებს.  <br>
+            📈GOA-ში თქვენი შვილი გახდება წარმატებული (100% გარანტია)  <br>
+            ✅ჩვენთან თითოეულ მოსწავლეს ინდივიდუალური ყურადღება ექცევა და პერსონალურად <br>
+            ვეხმარებით ზრდა-განვითარებაში.  <br> <br>
+            💚შემოგვიერთდით Goal-Oriented Academy • GOA, <br>
+            <a href="https://www.facebook.com/keshka11" style="color: lightgreen;">Nika Keshelava</a> -ს დაარსებულ აკადემიაში <br> <br>
+            🟢გაკვეთილები ჩატარდება კვირაში სამჯერ, ორჯერ, ან ერთხელ(როგორც აირჩევთ) <br>
+            🟢კვირაში 3ჯერ:-- კურსის ღირებულება არის ფასდაკლებით: თვეში 390 ლარი, ნაცვლად 740 ლარისა. <br>
+            🟢კვირაში 2ჯერ:-- კურსის ღირებულება არის ფასდაკლებით: თვეში 290 ლარი, ნაცვლად 560 ლარისა. <br>
+            🟢კვირაში 1ხელ:-- კურსის ღირებულება არის ფასდაკლებით: თვეში 170 ლარი, ნაცვლად 310 ლარისა. <br>
+            🟢საბაზისო ეტაპის ხანგრძლივობა არის 1 წელი, ხოლო სიღრმისეული კურსი - 2.5 წელი(დამოკიდებულია <br>
+            მოსწავლის ინტერესებზე)  <br>
+            🟢წარმატებული სტუდენტები საქმდებიან Goal-Oriented Academy • GOA-ში და პარტნიორ კომპანიებში.</b> </p> <br>
+       </div>
+    </div>
+
+    <div id="div7">
+        <a href="https://www.youtube.com/watch?v=GXc3jbyiKCM&t=1s"><img id="img5" src="./Images/Screenshot 2024-06-26 145204_cleanup.png" alt="როგორ დარეგისტრირდე GOA-ში:
+        "></a>
+        <div id="div8">
+            <p><b>როგორ დარეგისტრირდე გოაში</b></p>
+        </div>
+    </div>
+
+
+    <div id="div9">
+        <div id="div10">
+            <b><h2>GOA Contact</h2><br>
+
+            <i class="fa-brands fa-facebook"></i>
+            <p>დამფუძნებლის FB პროფილი<br><a href="https://www.facebook.com/keshka11/" style="color: blue;">facebook.com/keshka11</a></p><br>
+
+            <i class="fa-brands fa-facebook-f"></i>
+            <p>აკადემიის FB გვერდი<br><a href="https://www.facebook.com/nika11keshelava" style="color: blue;">facebook.com/nika11keshelava</a></p><br>
+
+            <i class="fa-brands fa-youtube"></i>
+            <p>Youtube<br><a href="https://www.youtube.com/@Goal_Oriented_Academy__GOA" style="color: blue;">Goal Oriented_Academy GOA</a></p><br>
+
+            <i class="fa-solid fa-envelope"></i>
+            <p>Gmail<br><b>nika.keshelava.1@btu.edu.ge</b></p><br>
+
+            <i class="fa-solid fa-phone"></i>
+            <p>Phone<br>551 13 40 41</p></b>
+        </div>
+    </div>
+
+</body>
+</html>
